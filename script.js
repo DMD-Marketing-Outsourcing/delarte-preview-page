@@ -1,9 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelector(".nav__links");
-  const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav__links");
+const hamburger = document.querySelector(".hamburger");
 
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("open");
-    navLinks.classList.toggle("active");
-  });
+function toggleMobileNav() {
+  hamburger.classList.toggle("open");
+  navLinks.classList.toggle("active");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  hamburger.addEventListener("click", toggleMobileNav);
 });

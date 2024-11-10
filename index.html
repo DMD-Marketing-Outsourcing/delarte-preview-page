@@ -19,11 +19,15 @@
       <nav class="nav">
         <a href="#" class="nav__logo">Villa Del Arte</a>
         <ul class="nav__links">
-          <li class="nav__item"><a href="#" class="nav__link">Główna</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Strona główna</a>
+          </li>
           <li class="nav__item"><a href="#" class="nav__link">Pokoje</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Galeria</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Opinie</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Kontakt</a></li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Kontakt</a>
+          </li>
         </ul>
         <div class="hamburger">
           <span></span>
@@ -32,8 +36,152 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="hero">
+        <img src="public/hero-photo.png" class="hero-image" />
+        <section class="reservation">
+          <h2>Rezerwacja</h2>
+          <div class="input-group">
+            <label for="check-in">Zameldowanie</label>
+            <input type="date" id="check-in" name="check-in" />
+          </div>
+          <div class="input-group">
+            <label for="check-out">Wymeldowanie</label>
+            <input type="date" id="check-out" name="check-out" />
+          </div>
+          <button class="btn">Sprawdź dostępność</button>
+        </section>
+      </div>
 
+      <section class="building">
+        <img src="public/budynek_photo.jpg" />
+        <div class="content">
+          <h2>Budynek</h2>
+          <p>
+            Villa Del Arte znajduje się w pięknie odrestaurowanym XIX-wiecznym
+            budynku w centrum Wadowic.
+          </p>
+        </div>
+      </section>
+      <section class="rooms">
+        <div class="content">
+          <h2>Wyposażenie i pokoje</h2>
+          <p>
+            Została wyposażona w wysokiej klasy sprzęt, a stylowy wystrój nadaje
+            jej kameralności i domowego ciepła. Cztery pokoje i apartament
+            zapewnią Państwu wygodny wypoczynek.
+            <a href="#"> Dowiedz się więcej ... </a>
+          </p>
+        </div>
+        <img src="public/budynek_photo.jpg" />
+      </section>
+      <section class="location">
+        <div class="content">
+          <h2>Lokalizacja</h2>
+          <p>
+            Centralne położenie villi pozwala w kilka minut dotrzeć do Placu
+            Jana Pawła II, gdzie znajduje się Bazylika Mniejsza i Dom Papieża.
+            Stąd też łatwo dostać się do pozostałych obiektów sakralnych,
+            instytucji i firm. Bliskość Wadowic do Krakowa, Andrychowa, Inwałdu,
+            Kalwarii Zebrzydowskiej, Oświęcimia, Zatora zwiększa atrakcyjność
+            naszego położenia.
+          </p>
+          <!-- Google Maps Embed -->
+          <div class="map-container">
+            <iframe
+              src="https://maps.google.com/maps?&amp;hl=en&amp;q=Villa Del Arte, 34-100 Wadowice&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="attractions">
+        <h2>Atrakcje</h2>
+        <div class="attraction__items">
+          <div class="attraction__item">
+            <img src="public/atrakcja-1-photo.jpeg" />
+            <h3>Muzeum Dom Rodzinny Jana Pawła II</h3>
+          </div>
+          <div class="attraction__item">
+            <img src="public/atrakcja-2-photo.jpg" />
+            <h3>Fadolandia. Sala Zabaw dla Dzieci</h3>
+          </div>
+          <div class="attraction__item">
+            <img src="public/atrakcja-3-photo.jpg" />
+            <h3>Paintball na Gołębiówce</h3>
+          </div>
+          <div class="attraction__item">
+            <img src="public/atrakcja-4-photo.jpg" />
+            <h3>Park św. Mikołaja</h3>
+          </div>
+          <div class="attraction__item">
+            <img src="public/atrakcja-5-photo.jpg" />
+            <h3>Sanktuarium w Kalwarii Zebrzydowskiej</h3>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Kontakt</h2>
+        <p>Zapraszamy do kontaktu w razie pytań lub wątpliwości.</p>
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Imię</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Wiadomość</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="submit-btn">Wyślij wiadomość</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/company/dmd-marketing-outsourcing"
+            aria-label="Linkedin"
+            target="_blank"
+            rel="noopener"
+            >Linkedin</a
+          >
+          <a
+            href="https://www.facebook.com/profile.php?id=61568417369655"
+            aria-label="Booking.com"
+            target="_blank"
+            rel="noopener"
+            >Facebook</a
+          >
+          <a
+            href="https://www.instagram.com/dmd.outsourcing/"
+            aria-label="Booking.com"
+            target="_blank"
+            rel="noopener"
+            >Instagram</a
+          >
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <p>Adres: ul. Iwańskiego 13, 34-100 Wadowice</p>
+          <p>Email: info@delarte.net.pl</p>
+          <p>Numer tel: +48 (33) 823 28 13</p>
+          <p>Numer tel: +48 606 656 384</p>
+        </div>
+      </div>
+
+      <!-- Copyright Info -->
+      <div class="copyright">
+        &copy; 2024 DMD Marketing & Outsourcing. All Rights Reserved.
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
