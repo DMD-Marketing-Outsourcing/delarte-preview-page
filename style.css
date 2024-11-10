@@ -50,9 +50,9 @@ h6 {
 :root {
   --TEXT: #000;
   --BACKGROUND: #fff;
-  --PRIMARY: #d19e5c;
-  --SECONDARY: #fbb376;
-  --ACCENT: #f9be48;
+  --PRIMARY: #9b6a2e;
+  --SECONDARY: #f3b57f;
+  --ACCENT: #eea645;
 }
 
 /* --ACTUAL STYLING-- */
@@ -73,7 +73,7 @@ nav {
 }
 
 .nav__logo {
-  color: var(--PRIMARY);
+  color: var(--ACCENT);
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -322,12 +322,13 @@ main .hero img {
 
 .building .content p a,
 .rooms .content p a {
-  text-decoration: none;
-  color: var(--ACCENT);
+  color: var(--PRIMARY);
+  font-weight: 900;
+  text-decoration: underline;
 }
 .building .content p a:hover,
 .rooms .content p a:hover {
-  color: var(--PRIMARY);
+  color: var(--ACCENT);
 }
 
 .location {
