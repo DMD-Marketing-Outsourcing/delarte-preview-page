@@ -47,11 +47,22 @@
     </header>
     <main>
       <div class="hero">
-        <img
-          src="img/hero-photo.png"
-          alt="Zdjęcie hotelu z zewnątrz w ciągu dnia z widocznym ogródkiem"
-          class="hero-image"
-        />
+        <picture>
+          <source srcset="./img/hero-500.webp" media="(max-width: 500px)" />
+          <source srcset="./img/hero-768.webp" media="(max-width: 768px)" />
+          <source srcset="./img/hero-1345.webp" media="(max-width: 1345px)" />
+          <source srcset="./img/hero-1920.webp" media="(min-width: 1346px)" />
+          <img
+            src="./img/hero-1920.webp"
+            alt="Zdjęcie hotelu Villa Del Arte z zewnątrz w ciągu dnia z widocznym ogródkiem"
+            fetchpriority="high"
+            sizes="(max-width: 500px) 500px, 
+           (max-width: 768px) 768px, 
+           (max-width: 1345px) 1345px, 
+           1920px"
+          />
+        </picture>
+
         <section class="reservation">
           <h2>Rezerwacja</h2>
           <div class="input-group">
@@ -68,8 +79,9 @@
 
       <section class="building">
         <img
-          src="img/budynek_photo.jpg"
+          src="img/budynek.webp"
           alt="Zdjęcie hotelu z zewnątrz w ciągu dnia z widocznym ogródkiem i parasolami"
+          loading="lazy"
         />
         <div class="content">
           <h2>Budynek</h2>
@@ -90,8 +102,9 @@
           </p>
         </div>
         <img
-          src="img/wyposazenie_photo.jpg"
+          src="img/wyposazenie.webp"
           alt="Zdjęcie jednego z naszych pokoi z widocznym podwójnym łóżkiem z czerwoną, zdobioną pościelą."
+          loading="lazy"
         />
       </section>
       <section class="location">
@@ -108,13 +121,11 @@
           <!-- Google Maps Embed -->
           <div class="map-container">
             <iframe
-              src="https://maps.google.com/maps?&amp;hl=en&amp;q=Villa Del Arte, 34-100 Wadowice&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               width="100%"
-              height="400"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              title="Mapa google maps z zaznaczoną lokalizacją naszego hotelu"
+              height="350"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=19.483920335769653%2C49.88031171463276%2C19.490781426429752%2C49.883329370255304&amp;layer=mapnik&amp;marker=49.88181883769624%2C19.487353563308716"
+              style="border: none"
+              title="Mapa z lokalizacją hotelu Villa Del Arte"
             ></iframe>
           </div>
         </div>
@@ -124,36 +135,41 @@
         <div class="attraction__items">
           <div class="attraction__item">
             <img
-              src="img/atrakcja-1-photo.jpeg"
+              src="img/atrakcja-1-photo.webp"
               alt="Zdjęcie przedstawiające dom rodzinny Jana Pawła II za dnia."
+              loading="lazy"
             />
             <h3>Muzeum Dom Rodzinny Jana Pawła II</h3>
           </div>
           <div class="attraction__item">
             <img
-              src="img/atrakcja-2-photo.jpg"
+              src="img/atrakcja-2-photo.webp"
               alt="Zdjęcie przedstawiające salę zabaw dla dzieci z widocznym basenem z kolorowymi kulkami oraz dwupiętrowym domkiem."
+              loading="lazy"
             />
             <h3>Fadolandia. Sala Zabaw dla Dzieci</h3>
           </div>
           <div class="attraction__item">
             <img
-              src="img/atrakcja-3-photo.jpg"
+              src="img/atrakcja-3-photo.webp"
               alt="Zdjęcie przedstawiające grupę osób w okopach grających w Paintball."
+              loading="lazy"
             />
             <h3>Paintball na Gołębiówce</h3>
           </div>
           <div class="attraction__item">
             <img
-              src="img/atrakcja-4-photo.jpg"
+              src="img/atrakcja-4-photo.webp"
               alt="Zdjęcie przedstawiające park św. mikołaja w Zatorze wieczorną porą ze święcącymi reniferami."
+              loading="lazy"
             />
             <h3>Park św. Mikołaja</h3>
           </div>
           <div class="attraction__item">
             <img
-              src="img/atrakcja-5-photo.jpg"
+              src="img/atrakcja-5-photo.webp"
               alt="Zdjęcie z lotu ptaka na którym widać sanktuarium w kalwarii zebrzydowskiej."
+              loading="lazy"
             />
             <h3>Sanktuarium w Kalwarii Zebrzydowskiej</h3>
           </div>
@@ -184,21 +200,18 @@
             href="https://www.linkedin.com/company/dmd-marketing-outsourcing"
             aria-label="Linkedin"
             target="_blank"
-            rel="noopener"
             >Linkedin</a
           >
           <a
             href="https://www.facebook.com/profile.php?id=61568417369655"
             aria-label="Facebook"
             target="_blank"
-            rel="noopener"
             >Facebook</a
           >
           <a
             href="https://www.instagram.com/dmd.outsourcing/"
             aria-label="Instagram"
             target="_blank"
-            rel="noopener"
             >Instagram</a
           >
         </div>

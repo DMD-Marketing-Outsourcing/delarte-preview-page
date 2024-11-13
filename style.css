@@ -212,6 +212,8 @@ nav {
 }
 
 main .hero {
+  max-width: 1920px;
+  margin: auto;
   position: relative;
 }
 
@@ -230,7 +232,7 @@ main .hero img {
   margin: auto;
   min-width: 300px;
   height: 50%;
-  min-height: 350px;
+  min-height: 340px;
   border-radius: 10px;
 }
 
@@ -298,6 +300,7 @@ main .hero img {
   max-width: 400px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 25 / 16;
 }
 
 .building .content,
@@ -357,8 +360,6 @@ main .hero img {
 .map-container {
   margin-top: 20px;
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 /* Desktop view */
 @media (min-width: 769px) {
@@ -479,6 +480,7 @@ main .hero img {
   max-width: 400px;
   object-fit: cover;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  aspect-ratio: 200 / 133;
 }
 .attraction__item {
   display: flex;
